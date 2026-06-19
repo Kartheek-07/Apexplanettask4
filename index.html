@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kartheek Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Kartheek Reddy</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>B.Tech CSE (AI & ML) Student at MITS.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>Employee Salary Prediction</li>
+        <li>To-Do List App</li>
+        <li>Portfolio Website</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: kartheekreddy2005@gmail.com</p>
+</section>
+
+<hr>
+
+<h2>To-Do List (Local Storage)</h2>
+
+<input type="text" id="taskInput" placeholder="Enter Task">
+<button onclick="addTask()">Add</button>
+
+<ul id="taskList"></ul>
+
+<hr>
+
+<h2>Product Listing</h2>
+
+<select id="filter" onchange="displayProducts()">
+    <option value="all">All</option>
+    <option value="Laptop">Laptop</option>
+    <option value="Mobile">Mobile</option>
+</select>
+
+<select id="sort" onchange="displayProducts()">
+    <option value="rating">Sort by Rating</option>
+    <option value="price">Sort by Price</option>
+</select>
+
+<div id="products"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
